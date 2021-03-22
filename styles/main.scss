@@ -1,8 +1,9 @@
-// 아이콘 폰트
-@import './base/fonts';
+//constants
+@import './constants/colors'; // colors
 
-// normalize.reset
-@import './base/nomalize';
+@import './base/fonts'; // 아이콘 폰트
+@import './base/nomalize'; // normalize.reset
+@import './base/reset'; // reset
 
-// reset
-@import './base/reset';
+// $hongsi_1: 1; // 소문자만으로 구성 '-' dash와 함께 쓰임
+// $HONGSI_2: 2; // 대문자만으로 구성 '_' underbar와 함께 쓰임
