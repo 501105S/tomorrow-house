@@ -1,11 +1,8 @@
 // 아이콘 폰트
 @import './base/fonts';
 
-p {
-  display: block;
-  color: #0081ff;
-}
+// normalize.reset
+@import './base/nomalize';
 
-* {
-  font-family: 'Noto Sans KR', sans-serif;
-}
+// reset
+@import './base/reset';
