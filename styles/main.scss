@@ -1,4 +1,11 @@
-p{
-    color: green;
-    display: block;
+// 아이콘 폰트
+@import './base/fonts';
+
+p {
+  display: block;
+  color: #0081ff;
+}
+
+* {
+  font-family: 'Noto Sans KR', sans-serif;
 }
