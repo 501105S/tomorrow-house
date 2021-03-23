@@ -6,6 +6,8 @@
 @import './base/nomalize'; // normalize.reset
 @import './base/reset'; // reset
 
+@import './mixins/text-style'; // typo mixin
+
 @import './layouts/grids'; // grid
 
 // $hongsi_1: 1; // 소문자만으로 구성 '-' dash와 함께 쓰임
