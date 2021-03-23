@@ -1,12 +1,14 @@
 //constants
 @import './constants/colors'; // colors
 @import './constants/typography'; // typography
+@import './constants/breakpoints'; // breakpoints
 
 @import './base/fonts'; // 아이콘 폰트
 @import './base/nomalize'; // normalize.reset
 @import './base/reset'; // reset
 
 @import './mixins/text-style'; // typo mixin
+@import './mixins/responsive'; // media query mixin
 
 @import './layouts/grids'; // grid
 
