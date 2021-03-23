@@ -40,13 +40,11 @@ $sm-columns: 4;
 $sm-margin: 5px;
 
 // TABLET
-$md-breakpoint: 768px;
 $md-columns: 12;
 $md-margin: 30px;
 $md-max-container: 960px + $md-margin * 2;
 
 // PC
-$lg-breakpoint: 1200px;
 $lg-columns: 12;
 $lg-unit: 75px;
 $lg-max-container: ($lg-unit + $gutter) * $lg-columns;
@@ -76,7 +74,7 @@ $lg-max-container: ($lg-unit + $gutter) * $lg-columns;
   }
 
   // 태블릿으로 보이는 화면
-  @media screen and (min-width: $md-breakpoint) {
+  @include responsive(T) {
     max-width: $md-max-container;
     padding: 0 $md-margin;
 
@@ -88,7 +86,7 @@ $lg-max-container: ($lg-unit + $gutter) * $lg-columns;
   }
 
   // 데스크탑으로 보이는 화면
-  @media screen and (min-width: $lg-breakpoint) {
+  @include responsive(D) {
     max-width: $lg-max-container;
     padding: 0;
 
