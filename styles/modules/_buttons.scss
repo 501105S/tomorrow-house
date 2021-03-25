@@ -1,0 +1,90 @@
+%btn-base {
+  @include inline-flexbox;
+  padding: 0 8px;
+  font-weight: 700;
+  border-radius: 4px;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+  }
+}
+
+// button 변주 3요소 : styles, sizes, states
+// button 색의 김이박 : fill, outlined, ghost
+
+// Note: button styles
+// Note: button states (Default, hover, focus, disable, active)
+.btn-primary {
+  @extend %btn-base;
+
+  color: $white;
+  background-color: $blue;
+  transition: background-color 200ms ease-in-out;
+
+  // disabled가 아닌 btn-000이 hover가 되었을 때
+  // disabled인 btn은 hover 효과 적용X
+  &:not(:disabled):hover {
+    background-color: $blue-dark;
+  }
+}
+
+.btn-secondary {
+  @extend %btn-base;
+
+  color: $primary;
+  background-color: $border;
+  transition: background-color 200ms ease-in-out;
+
+  &:not(:disabled):hover {
+    background-color: $tertiary;
+  }
+}
+
+.btn-outlined {
+  @extend %btn-base;
+
+  color: $blue;
+  background-color: $white;
+  border: 1px solid $blue;
+  transition: background-color 200ms ease-in-out;
+
+  &:not(:disabled):hover {
+    background-color: $blue-light;
+  }
+}
+
+.btn-ghost {
+  @extend %btn-base;
+
+  color: $primary;
+  background-color: transparent;
+  transition: color 200ms ease-in-out;
+
+  &:not(:disabled):hover {
+    color: $secondary;
+  }
+}
+
+// Note: button sizes
+// button의 width값은 설정해주지 않는것이 좋음
+// button styles에서 %btn-base를 상속받고있기 때문에 sizes에서 중복 상속 필요없음
+.btn-32 {
+  @include text-style(14);
+  height: 32px;
+}
+
+.btn-40 {
+  @include text-style(16);
+  height: 40px;
+}
+
+.btn-48 {
+  @include text-style(16);
+  height: 48px;
+}
+
+.btn-55 {
+  @include text-style(18);
+  height: 55px;
+}
