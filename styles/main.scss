@@ -12,6 +12,8 @@
 @import './mixins/positions'; // position mixin
 @import './mixins/flexbox'; // flexbox mixin
 
+@import './modules/tages'; // tag
+
 @import './layouts/grids'; // grid
 
 // $hongsi_1: 1; // 소문자만으로 구성 '-' dash와 함께 쓰임
