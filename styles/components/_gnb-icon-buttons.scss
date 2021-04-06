@@ -1,0 +1,21 @@
+.gnb-icon-button {
+  @include flexbox;
+  width: 32px;
+  height: 32px;
+  font-size: 24px;
+  color: $secondary;
+  transition: color 200ms ease-in-out;
+
+  // gnb-icon-button 이자 is-menu라고 하는 클래스를 동시에 가지고있는
+  &.is-menu {
+    color: $blue;
+
+    &:active {
+      color: $blue-dark;
+    }
+  }
+
+  &:active {
+    color: $primary;
+  }
+}
