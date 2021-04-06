@@ -1,0 +1,27 @@
+// screen reader only ( 눈에는 보이지 않으나 스크린리더가 읽어줌 )
+.sr-only {
+  position: absolute;
+  top: -99999999px;
+  left: -99999999px;
+  z-index: -999999999;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+}
+
+// mobile
+.sm-only {
+  @media all and (min-width: $md-breakpoint) {
+    display: none !important;
+  }
+}
+
+// DeskTop
+.lg-only {
+  display: none;
+  @media all and (min-width: $lg-breakpoint - 1) {
+    display: none !important;
+  }
+}

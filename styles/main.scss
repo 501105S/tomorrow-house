@@ -6,6 +6,7 @@
 @import './base/fonts'; // 아이콘 폰트
 @import './base/nomalize'; // normalize.reset
 @import './base/reset'; // reset
+@import './base/globals'; // globals
 
 @import './mixins/text-style'; // typo mixin
 @import './mixins/responsive'; // media query mixin
@@ -18,7 +19,7 @@
 @import './modules/prices'; // prices
 @import './modules/buttons'; // button
 @import './modules/forms'; // form
-@import './modules/pagination'; // pagenation
+@import './modules/pagination'; // pagination
 
 @import './layouts/grids'; // grid
 
