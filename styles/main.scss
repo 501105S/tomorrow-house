@@ -2,6 +2,7 @@
 @import './constants/colors'; // colors
 @import './constants/typography'; // typography
 @import './constants/breakpoints'; // breakpoints
+@import './constants/box-shadows'; // box-shadows
 
 @import './base/fonts'; // 아이콘 폰트
 @import './base/nomalize'; // normalize.reset
@@ -24,6 +25,7 @@
 
 @import './components/gnb-nav'; // gnb-nav
 @import './components/gnb-icon-buttons'; // gnb-icon-button
+@import './components/my-menu'; // my-menu
 
 @import './layouts/grids'; // grid
 @import './layouts/gnb'; // gng
