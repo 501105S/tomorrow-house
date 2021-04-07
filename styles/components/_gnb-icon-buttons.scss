@@ -1,10 +1,14 @@
 .gnb-icon-button {
+  $bagde-size: 16px;
+
   @include flexbox;
+  position: relative;
   width: 32px;
   height: 32px;
   font-size: 24px;
   color: $secondary;
-  transition: color 200ms ease-in-out;
+  border-radius: 50%;
+  transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
 
   // gnb-icon-button 이자 is-menu라고 하는 클래스를 동시에 가지고있는
   &.is-menu {
@@ -15,7 +19,39 @@
     }
   }
 
+  &.is-cart {
+    i {
+      position: relative;
+      top: 1px;
+      right: 0.5px;
+    }
+  }
+
   &:active {
     color: $primary;
+  }
+
+  .badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    height: $bagde-size;
+    min-width: $bagde-size;
+    padding: 0 4px;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: $white;
+    background-color: $red;
+    border-radius: $bagde-size / 2;
+  }
+
+  @include responsive(T) {
+    &:hover {
+      color: $white;
+      background-color: $blue;
+    }
   }
 }
