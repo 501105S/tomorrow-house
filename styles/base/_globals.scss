@@ -1,14 +1,19 @@
 // screen reader only ( 눈에는 보이지 않으나 스크린리더가 읽어줌 )
-.sr-only {
-  position: absolute;
-  top: -99999999px;
-  left: -99999999px;
-  z-index: -999999999;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  visibility: hidden;
+.visually-hidden {
+  position: absolute !important;
+  top: -99999999px !important;
+  left: -99999999px !important;
+  z-index: -999999999 !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  white-space: nowrap !important;
+  border: 0 !important;
 }
 
 // mobile
@@ -18,10 +23,42 @@
   }
 }
 
+// Tablet
+.md-only {
+  @media all and (max-width: $md-breakpoint - 1) {
+    display: none !important;
+  }
+
+  @media all and (min-width: $lg-breakpoint) {
+    display: none !important;
+  }
+}
+
 // DeskTop
 .lg-only {
-  display: none;
-  @media all and (min-width: $lg-breakpoint - 1) {
+  @media all and (max-width: $lg-breakpoint - 1) {
+    display: none !important;
+  }
+}
+
+.sm-hidden {
+  @media all and (max-width: $md-breakpoint - 1) {
+    display: none !important;
+  }
+}
+
+.md-hidden {
+  @media all and (min-width: $md-breakpoint) {
+    display: none !important;
+  }
+
+  @media all and (max-width: $lg-breakpoint - 1) {
+    display: none !important;
+  }
+}
+
+.lg-hidden {
+  @media all and (min-width: $lg-breakpoint) {
     display: none !important;
   }
 }

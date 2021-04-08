@@ -1,6 +1,6 @@
 .gnb {
-  position: relative;
   border-bottom: 1px solid $border;
+  position: relative;
 
   &-wrapper {
     @include flexbox(between);
@@ -26,8 +26,8 @@
 
     img {
       display: block;
-      width: auto;
       height: 20px;
+      width: auto;
     }
   }
 
@@ -71,8 +71,8 @@
     }
 
     .logo {
-      position: static;
       margin-right: 32px;
+      position: static;
       transform: none;
 
       img {
@@ -92,8 +92,8 @@
   @include responsive(D) {
     &-right {
       .input-group {
-        width: 264px;
         margin-right: 24px;
+        width: 264px;
       }
     }
   }
