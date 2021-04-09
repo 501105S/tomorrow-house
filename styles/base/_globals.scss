@@ -1,17 +1,12 @@
 // screen reader only ( 눈에는 보이지 않으나 스크린리더가 읽어줌 )
 .visually-hidden {
   position: absolute !important;
-  top: -99999999px !important;
-  left: -99999999px !important;
-  z-index: -999999999 !important;
   width: 1px !important;
   height: 1px !important;
   padding: 0 !important;
   margin: -1px !important;
   overflow: hidden !important;
   clip: rect(0, 0, 0, 0) !important;
-  opacity: 0 !important;
-  visibility: hidden !important;
   white-space: nowrap !important;
   border: 0 !important;
 }
