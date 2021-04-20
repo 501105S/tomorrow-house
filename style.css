@@ -361,17 +361,12 @@ ol {
 
 .visually-hidden {
   position: absolute !important;
-  top: -99999999px !important;
-  left: -99999999px !important;
-  z-index: -999999999 !important;
   width: 1px !important;
   height: 1px !important;
   padding: 0 !important;
   margin: -1px !important;
   overflow: hidden !important;
   clip: rect(0, 0, 0, 0) !important;
-  opacity: 0 !important;
-  visibility: hidden !important;
   white-space: nowrap !important;
   border: 0 !important; }
 
@@ -851,19 +846,22 @@ i {
       left: 50%;
       transform: translateX(-50%);
       top: -24px;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 12px solid transparent;
+      content: '';
       display: block;
       width: 0;
       height: 0;
       border-top: 12px solid transparent;
       border-right: 10px solid transparent;
       border-bottom: 12px solid transparent;
-      border-left: 10px solid transparent;
-      content: ''; }
+      width: 0; }
     .my-menu-content::before {
       border-bottom-color: #e0e2e7; }
     .my-menu-content::after {
-      top: -22px;
-      border-bottom-color: #fff; }
+      border-bottom-color: #fff;
+      top: -22px; }
   .my-menu-list {
     width: 200px;
     padding: 8px;
@@ -878,11 +876,11 @@ i {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.01em;
-    width: 100%;
+    border-radius: 2px;
     height: 44px;
     padding: 0 8px;
-    border-radius: 2px;
-    transition: background-color 200ms ease-in-out; }
+    transition: background-color 200ms ease-in-out;
+    width: 100%; }
   .my-menu-item:hover {
     background-color: #f7f8fa; }
 
@@ -994,8 +992,8 @@ i {
         width: 1140px; } }
 
 .gnb {
-  position: relative;
-  border-bottom: 1px solid #e0e2e7; }
+  border-bottom: 1px solid #e0e2e7;
+  position: relative; }
   .gnb-wrapper {
     display: flex;
     justify-content: space-between;
@@ -1016,8 +1014,8 @@ i {
       display: block; }
     .gnb .logo img {
       display: block;
-      width: auto;
-      height: 20px; }
+      height: 20px;
+      width: auto; }
   @media screen and (min-width: 768px) {
     .gnb-right {
       display: flex;
@@ -1046,8 +1044,8 @@ i {
     .gnb-wrapper {
       height: 80px; }
     .gnb .logo {
-      position: static;
       margin-right: 32px;
+      position: static;
       transform: none; }
       .gnb .logo img {
         height: 24px; }
@@ -1057,7 +1055,7 @@ i {
         margin-left: 4px; } }
   @media screen and (min-width: 1200px) {
     .gnb-right .input-group {
-      width: 264px;
-      margin-right: 24px; } }
+      margin-right: 24px;
+      width: 264px; } }
 
 /*# sourceMappingURL=style.css.map */

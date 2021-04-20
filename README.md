@@ -1,5 +1,16 @@
 # 내일의 집
 
+### 생각을 정리합니다 (\_global.scss)
+
+| Mobile | Tablet | Desktop | class        |
+| ------ | ------ | ------- | ------------ |
+| 0      | X      | X       | `.sm-only`   |
+| 0      | 0      | X       | `.lg-hidden` |
+| X      | 0      | X       | `.md-only`   |
+| X      | 0      | 0       | `.sm-hidden` |
+| X      | X      | 0       | `.lg-only`   |
+| 0      | X      | 0       | `.md-hidden` |
+
 ### 1. GNB
 
 - 로그인을 하지 않은 경우

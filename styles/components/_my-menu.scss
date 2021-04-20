@@ -36,14 +36,14 @@
       @include pos-center-x;
       top: -#{$tooltip-size * 2};
 
-      display: block;
-      width: 0;
-      height: 0;
-      border-top: $tooltip-size solid transparent;
-      border-right: 10px solid transparent;
-      border-bottom: $tooltip-size solid transparent;
       border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: $tooltip-size solid transparent;
       content: '';
+      display: block;
+      height: 0;
+      border-bottom: $tooltip-size solid transparent;
+      width: 0;
     }
 
     &::before {
@@ -51,17 +51,17 @@
     }
 
     &::after {
-      top: -#{$tooltip-size * 2 - 2px};
       border-bottom-color: $white;
+      top: -#{$tooltip-size * 2 - 2px};
     }
   }
 
   &-list {
-    width: 200px;
-    padding: 8px;
     background-color: $white;
+    padding: 8px;
     border: 1px solid $border;
     border-radius: 4px;
+    width: 200px;
   }
 
   &-item {
@@ -69,11 +69,11 @@
     button {
       @include flexbox(start);
       @include text-style(16, $primary);
-      width: 100%;
+      border-radius: 2px;
       height: 44px;
       padding: 0 8px;
-      border-radius: 2px;
       transition: background-color 200ms ease-in-out;
+      width: 100%;
     }
 
     &:hover {
