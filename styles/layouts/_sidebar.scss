@@ -1,0 +1,63 @@
+.sidebar {
+  width: 240px;
+  padding: 32px 20px;
+  background-color: $white;
+
+  &-header {
+    padding: 0 12px;
+
+    .logo {
+      @include flexbox(start);
+      a {
+        display: block;
+      }
+
+      img {
+        display: block;
+        height: 20px;
+        width: auto;
+      }
+    }
+  }
+
+  &-user,
+  &auth {
+    @include flexbox(start);
+    height: 88px;
+  }
+
+  &-user {
+    a {
+      @include flexbox(start);
+      @include text-style(14, $primary);
+      width: 100%;
+      font-weight: 700;
+    }
+
+    .avatar-24 {
+      margin-right: 8px;
+      flex-grow: 0;
+      flex-shrink: 0;
+      background-image: url('/assets/images/img-user-default.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+    }
+
+    .username {
+      flex-grow: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  &-auth {
+    @include flexbox(between);
+    padding: 24px 0;
+
+    a {
+      width: 84px;
+    }
+  }
+}
