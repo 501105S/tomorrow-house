@@ -1,12 +1,12 @@
 .drawer-menu {
   $drawer-menu-item-height: 36px;
-  $drawer-menu-list-padding: 8px;
+  $drawer-menu-list-padding: 20px;
   $community-length: 8;
   $store-length: 9;
   $expert-length: 2;
 
-  @function _calculate-max-content-height($length){
-      @return $drawer-menu-item-height * $length + $drawer-menu-list-padding;
+  @function _calculate-max-content-height($length) {
+    @return $drawer-menu-item-height * $length + $drawer-menu-list-padding;
   }
 
   &.is-active {
@@ -17,14 +17,16 @@
 
   &.is-open {
     &.is-community {
-      .drawer-menu-content { 
+      .drawer-menu-content {
         max-height: _calculate-max-content-height($community-length);
       }
+    }
 
     &.is-store {
       .drawer-menu-content {
         max-height: _calculate-max-content-height($store-length);
       }
+    }
 
     &.is-expert {
       .drawer-menu-content {
@@ -32,7 +34,7 @@
       }
     }
 
-    .drawer-menu-button i:last-child {
+    .drawer-menu-button .ic-chevron {
       transform: translateY(-50%) rotate(180deg);
     }
 
@@ -57,12 +59,13 @@
 
     i {
       &:first-child {
-        position: relative; // TO DO : Check
-        top: 1px; // TO DO : Check
+        position: relative; // TODO: Check
+        top: 1px; // TODO: Check
         margin-right: 8px;
         font-size: 24px;
         color: $primary;
       }
+
       &:last-child {
         @include pos-center-y;
         right: 8px;
@@ -98,8 +101,6 @@
     .ic-new {
       font-size: 16px;
       color: $red;
-      position: relative;
-      top: 2px;
     }
   }
 }
