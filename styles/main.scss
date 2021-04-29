@@ -3,6 +3,7 @@
 @import './constants/typography'; // typography
 @import './constants/breakpoints'; // breakpoints
 @import './constants/box-shadows'; // box-shadows
+@import './constants/z-indexes'; // z-index
 
 @import './base/fonts'; // 아이콘 폰트
 @import './base/nomalize'; // normalize.reset
@@ -31,6 +32,7 @@
 @import './layouts/grids'; // grid
 @import './layouts/gnb'; // gnb
 @import './layouts/sidebar'; // sidebar
+@import './layouts/overlay'; // overlay
 
 // $hongsi_1: 1; // 소문자만으로 구성 '-' dash와 함께 쓰임
 // $HONGSI_2: 2; // 대문자만으로 구성 '_' underbar와 함께 쓰임
