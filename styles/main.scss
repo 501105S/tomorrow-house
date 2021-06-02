@@ -4,6 +4,7 @@
 @import './constants/breakpoints'; // breakpoints
 @import './constants/box-shadows'; // box-shadows
 @import './constants/z-indexes'; // z-index
+@import './constants/dimensions'; // dimensions
 
 @import './base/fonts'; // 아이콘 폰트
 @import './base/nomalize'; // normalize.reset
@@ -37,6 +38,7 @@
 @import './layouts/overlay'; // overlay
 @import './layouts/search-modal'; // search-modal
 @import './layouts/lnb'; // lnb
+@import './layouts/global-header'; // global-header
 @import './layouts/global-footer'; // global-footer
 
 // $hongsi_1: 1; // 소문자만으로 구성 '-' dash와 함께 쓰임
